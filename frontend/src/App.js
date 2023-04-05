@@ -1,21 +1,30 @@
 import PreLogin from "./components/navs/prelogin-nav";
 import Home from "./components/Home";
-import {Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import Login from "./components/Login";
+import Register from "./components/Register";
+import Footer from "./components/footer";
 
 function App() {
   return (
-    <> <Routes/>
-
-   <Route path="/" element = {<PreLogin/>} />
-   <Route path="/home" element = {<Home/>} />
-   <Route path="/login" element = {<Login/>} />
-   <Route path="/register" element = {<Login/>} />
-
-
-          <Routes/> </>
-    
+    <> 
+    <Router>
+      <> </>
+   <Routes>
+   <Route path="/" element={<PreLogin/>}/>
+   <Route path='/login' element={<Login/>}/>
+   <Route path='/register' element={<Register/>}/>
+    <Route path='/home' element={<Home/>}/>
+   
+   </Routes>
+   <> <Footer></Footer> </>
+   </Router>
+   </>
   );
+
+
+       
+
 }
 
 export default App;
