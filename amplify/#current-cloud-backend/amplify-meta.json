@@ -1,0 +1,103 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tremelo01-dev-131434-authRole",
+      "UnauthRoleArn": "arn:aws:iam::303824611805:role/amplify-tremelo01-dev-131434-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::303824611805:role/amplify-tremelo01-dev-131434-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-tremelo01-dev-131434-deployment",
+      "UnauthRoleName": "amplify-tremelo01-dev-131434-unauthRole",
+      "StackName": "amplify-tremelo01-dev-131434",
+      "StackId": "arn:aws:cloudformation:eu-north-1:303824611805:stack/amplify-tremelo01-dev-131434/6e18f0b0-d3ab-11ed-a9bd-0a829312b6c4",
+      "AmplifyAppId": "d1svsc1xgc83gm"
+    }
+  },
+  "api": {
+    "tremelo01": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "tremelo01ee72e413"
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            },
+            {
+              "authenticationType": "API_KEY",
+              "apiKeyConfig": {
+                "apiKeyExpirationDays": 30,
+                "description": "api key description"
+              }
+            }
+          ],
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authtremelo01ee72e413"
+            }
+          }
+        },
+        "GraphQLAPIIdOutput": "mmb3tzfiu5e5vo77asyebxpxyq",
+        "GraphQLAPIEndpointOutput": "https://vrjknutd5zhg3mhzkvyfxxeucq.appsync-api.eu-north-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-5gmbwucuovfxxgwp6huj5jdziy"
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync",
+      "lastPushTimeStamp": "2023-04-05T15:36:16.986Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-tremelo01-dev-131434-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apitremelo01"
+      },
+      "lastPushDirHash": "z1nrDQ9OjpliH/Epxg0J4QE2rCg="
+    }
+  },
+  "auth": {
+    "tremelo01ee72e413": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "eu-north-1_YTkJKtW6s",
+        "AppClientIDWeb": "7f3nheqm90mej305dini0b41jn",
+        "AppClientID": "48iq6usv4cc6avus62fs3kb6qd",
+        "IdentityPoolId": "eu-north-1:c856b6fe-a946-4171-becc-f6c71594b621",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-north-1:303824611805:userpool/eu-north-1_YTkJKtW6s",
+        "IdentityPoolName": "tremelo01ee72e413_identitypool_ee72e413__dev",
+        "UserPoolName": "tremelo01ee72e413_userpool_ee72e413"
+      },
+      "lastPushTimeStamp": "2023-04-05T15:36:16.932Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-tremelo01-dev-131434-deployment/amplify-cfn-templates/auth/tremelo01ee72e413-cloudformation-template.json",
+        "logicalId": "authtremelo01ee72e413"
+      }
+    }
+  }
+}

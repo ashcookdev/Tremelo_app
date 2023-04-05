@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tremelo01-dev-131434-authRole",
+      "UnauthRoleArn": "arn:aws:iam::303824611805:role/amplify-tremelo01-dev-131434-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::303824611805:role/amplify-tremelo01-dev-131434-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-tremelo01-dev-131434-deployment",
+      "UnauthRoleName": "amplify-tremelo01-dev-131434-unauthRole",
+      "StackName": "amplify-tremelo01-dev-131434",
+      "StackId": "arn:aws:cloudformation:eu-north-1:303824611805:stack/amplify-tremelo01-dev-131434/6e18f0b0-d3ab-11ed-a9bd-0a829312b6c4",
+      "AmplifyAppId": "d1svsc1xgc83gm"
+    },
+    "categories": {
+      "auth": {
+        "tremelo01ee72e413": {}
+      },
+      "api": {
+        "tremelo01": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+projects:
+  tremelo01:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src

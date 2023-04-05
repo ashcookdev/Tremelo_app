@@ -1,0 +1,10 @@
+type Profile @model @auth(rules: [{allow: public, operations: [read]}, {allow: owner}]) {
+  ArtistName: String
+  Genre: String
+  Role: String
+  ProfilePic: String
+  Bio: String
+  Location: String
+  Terms: String
+}
+ 
