@@ -4,5 +4,7 @@ type Profile @model @auth(rules: [{allow: public, operations: [read]}, {allow: o
   Role: String
   ProfilePic: String
   Bio: String
+  Location: String
+  Terms: String
 }
  

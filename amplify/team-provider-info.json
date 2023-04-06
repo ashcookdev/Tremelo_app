@@ -17,6 +17,9 @@
       },
       "api": {
         "tremelo01": {}
+      },
+      "storage": {
+        "profilepics": {}
       }
     }
   }

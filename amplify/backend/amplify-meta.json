@@ -50,12 +50,12 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "AppSync",
-      "lastPushTimeStamp": "2023-04-05T15:39:05.350Z",
+      "lastPushTimeStamp": "2023-04-05T18:02:19.369Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-tremelo01-dev-131434-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apitremelo01"
       },
-      "lastPushDirHash": "z1nrDQ9OjpliH/Epxg0J4QE2rCg="
+      "lastPushDirHash": "SnfT3dlmPUFIFJb4vD8KAO7R78c="
     }
   },
   "auth": {
@@ -93,11 +93,28 @@
         "IdentityPoolName": "tremelo01ee72e413_identitypool_ee72e413__dev",
         "UserPoolName": "tremelo01ee72e413_userpool_ee72e413"
       },
-      "lastPushTimeStamp": "2023-04-05T15:39:05.353Z",
+      "lastPushTimeStamp": "2023-04-05T18:02:19.380Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-tremelo01-dev-131434-deployment/amplify-cfn-templates/auth/tremelo01ee72e413-cloudformation-template.json",
         "logicalId": "authtremelo01ee72e413"
       }
+    }
+  },
+  "storage": {
+    "profilepics": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2023-04-05T18:02:19.663Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-tremelo01-dev-131434-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageprofilepics"
+      },
+      "output": {
+        "BucketName": "profilepics131434-dev",
+        "Region": "eu-north-1"
+      },
+      "lastPushDirHash": "rXO7N/2vYHqDy+c4Lyb6c9GT5qo="
     }
   }
 }

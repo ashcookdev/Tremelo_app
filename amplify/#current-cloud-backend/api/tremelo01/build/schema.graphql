@@ -5,6 +5,8 @@ type Profile @aws_api_key @aws_iam @aws_cognito_user_pools {
   Role: String
   ProfilePic: String
   Bio: String
+  Location: String
+  Terms: String
   id: ID!
   createdAt: AWSDateTime!
   updatedAt: AWSDateTime!
@@ -172,6 +174,8 @@ input ModelProfileFilterInput {
   Role: ModelStringInput
   ProfilePic: ModelStringInput
   Bio: ModelStringInput
+  Location: ModelStringInput
+  Terms: ModelStringInput
   and: [ModelProfileFilterInput]
   or: [ModelProfileFilterInput]
   not: ModelProfileFilterInput
@@ -188,6 +192,8 @@ input ModelProfileConditionInput {
   Role: ModelStringInput
   ProfilePic: ModelStringInput
   Bio: ModelStringInput
+  Location: ModelStringInput
+  Terms: ModelStringInput
   and: [ModelProfileConditionInput]
   or: [ModelProfileConditionInput]
   not: ModelProfileConditionInput
@@ -199,6 +205,8 @@ input CreateProfileInput {
   Role: String
   ProfilePic: String
   Bio: String
+  Location: String
+  Terms: String
   id: ID
 }
 
@@ -208,6 +216,8 @@ input UpdateProfileInput {
   Role: String
   ProfilePic: String
   Bio: String
+  Location: String
+  Terms: String
   id: ID!
 }
 
@@ -227,6 +237,8 @@ input ModelSubscriptionProfileFilterInput {
   Role: ModelSubscriptionStringInput
   ProfilePic: ModelSubscriptionStringInput
   Bio: ModelSubscriptionStringInput
+  Location: ModelSubscriptionStringInput
+  Terms: ModelSubscriptionStringInput
   and: [ModelSubscriptionProfileFilterInput]
   or: [ModelSubscriptionProfileFilterInput]
 }
